@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeySafe Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Menü-Symbol (Schlüsselanhänger) -->
+    <div id="menu-toggle">
+        <img src="path-to-keychain-icon.png" alt="Keychain Menu Icon" onclick="toggleMenu()" />
+    </div>
+
+    <!-- Seitenmenü -->
+    <div id="sidebar" style="display: none;">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Produkte</a></li>
+            <li><a href="cart.html">Warenkorb</a></li>
+            <li><a href="about.html">Über uns</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </div>
+
+    <!-- Inhalt der Startseite -->  
+    <div id="content">
+        <h1>Willkommen beim KeySafe Shop</h1>
+        <p>Ihr sicherer Ort für alle Ihre Bedürfnisse.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produkte - KeySafe Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu-toggle">
+        <img src="path-to-keychain-icon.png" alt="Keychain Menu Icon" onclick="toggleMenu()" />
+    </div>
+
+    <div id="sidebar" style="display: none;">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produkte.html">Produkte</a></li>
+            <li><a href="warenkorb.html">Warenkorb</a></li>
+            <li><a href="ueber-uns.html">Über uns</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <h1>Unsere Produkte</h1>
+        <p>Hier sind unsere neuesten Angebote:</p>
+        <ul>
+            <li>Produkt 1</li>
+            <li>Produkt 2</li>
+            <li>Produkt 3</li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.style.display = sidebar.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warenkorb - KeySafe Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu-toggle">
+        <img src="path-to-keychain-icon.png" alt="Keychain Menu Icon" onclick="toggleMenu()" />
+    </div>
+
+    <div id="sidebar" style="display: none;">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produkte.html">Produkte</a></li>
+            <li><a href="warenkorb.html">Warenkorb</a></li>
+            <li><a href="ueber-uns.html">Über uns</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <h1>Ihr Warenkorb</h1>
+        <p>Hier werden die Produkte angezeigt, die Sie hinzufügen.</p>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.style.display = sidebar.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#menu-toggle img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    margin: 20px 0;
+}
+
+#sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#content {
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
